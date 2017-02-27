@@ -9,7 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
-// import {NavbarComponent} from './components/navbar/navbar.component';
+var navbar_component_1 = require("./components/navbar/navbar.component");
 // import {JumbotronComponent} from './components/jumbotron/jumbotron.component';
 // import {HomeComponent} from './components/pages/home.component';
 // import {AboutComponent} from './components/pages/about.component';
@@ -21,11 +21,8 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
-        declarations: [app_component_1.AppComponent //,
-            // NavbarComponent,
-            // JumbotronComponent,
-            // HomeComponent,
-            /*AboutComponent*/ 
+        declarations: [app_component_1.AppComponent,
+            navbar_component_1.NavbarComponent,
         ],
         bootstrap: [app_component_1.AppComponent]
     })
