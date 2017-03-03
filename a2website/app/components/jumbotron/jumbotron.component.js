@@ -8,7 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
 var JumbotronComponent = (function () {
     function JumbotronComponent() {
         this.jbtHeading = "Hello World";
@@ -16,15 +17,15 @@ var JumbotronComponent = (function () {
         this.jbtBtnText = "Read More";
         this.jbtBtnUrl = "/about";
     }
-    JumbotronComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'jumbotron',
-            templateUrl: "jumbotron.component.html"
-        }), 
-        __metadata('design:paramtypes', [])
-    ], JumbotronComponent);
     return JumbotronComponent;
 }());
+JumbotronComponent = __decorate([
+    core_1.Component({
+        moduleId: module.id,
+        selector: 'jumbotron',
+        templateUrl: "jumbotron.component.html"
+    }),
+    __metadata("design:paramtypes", [])
+], JumbotronComponent);
 exports.JumbotronComponent = JumbotronComponent;
 //# sourceMappingURL=jumbotron.component.js.map
