@@ -18,6 +18,9 @@ var ProfileComponent = (function () {
         this._githubService.getUser().subscribe(function (user) {
             _this.user = user;
         });
+        this._githubService.getRepos().subscribe(function (repos) {
+            _this.repos = repos;
+        });
     }
     return ProfileComponent;
 }());
