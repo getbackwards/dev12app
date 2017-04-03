@@ -28,6 +28,9 @@ var GithubService = (function () {
         return this._http.get('http://api.github.com/users/' + this.username + '/repos?client_id=' + this.client_id + '&client_secret=' + this.client_secret)
             .map(function (res) { return res.json(); });
     };
+    GithubService.prototype.updateUser = function (username) {
+        this.username = username;
+    };
     return GithubService;
 }());
 GithubService = __decorate([
