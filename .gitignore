@@ -37,13 +37,6 @@ ehthumbs.db
 Thumbs.db
 .idea/workspace.xml
 
-ngspotify/
-
 .idea/codeStyleSettings.xml
 
-<<<<<<< HEAD
-.idea/workspace.xml
-
-ngspotify/
-=======
->>>>>>> work-branch
+.idea/inspectionProfiles/
