@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var http_1 = require("@angular/http");
 require("rxjs/add/operator/map");
@@ -29,6 +30,11 @@ var SpotifyService = (function () {
     SpotifyService.prototype.getAlbums = function (artistId) {
         this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId + '/albums';
         return this._http.get(this.albumsUrl)
+            .map(function (res) { return res.json(); });
+    };
+    SpotifyService.prototype.getAlbum = function (id) {
+        this.albumUrl = 'https://api.spotify.com/v1/albums/' + id;
+        return this._http.get(this.albumUrl)
             .map(function (res) { return res.json(); });
     };
     return SpotifyService;

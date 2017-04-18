@@ -14,6 +14,7 @@ var search_component_1 = require("./components/search/search.component");
 var navbar_component_1 = require("./components/navbar/navbar.component");
 var about_component_1 = require("./components/about/about.component");
 var artist_component_1 = require("./components/artist/artist.component");
+var album_component_1 = require("./components/album/album.component");
 var app_routing_1 = require("./app.routing");
 var AppModule = (function () {
     function AppModule() {
@@ -30,7 +31,8 @@ AppModule = __decorate([
             search_component_1.SearchComponent,
             navbar_component_1.NavbarComponent,
             about_component_1.AboutComponent,
-            artist_component_1.ArtistComponent],
+            artist_component_1.ArtistComponent,
+            album_component_1.AlbumComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
